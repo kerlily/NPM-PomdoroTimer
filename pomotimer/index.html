@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-100 min-h-screen flex items-center justify-center">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pomodoro Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-8 font-sans text-gray-800 bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 w-full h-full">
+    <h1 class="text-4xl font-bold mb-8">Pomodoro Timer</h1>
+    <div id="timer" class="text-8xl font-mono mb-8 text-gray-900">25:00</div>
+    <div class="space-x-4 mb-6">
+        <button id="startBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded shadow transition">Start</button>
+<button id="pauseBtn" disabled class="bg-gray-400 hover:bg-gray-500 text-white font-semibold py-2 px-6 rounded shadow transition">Pause</button>
+        <button id="resetBtn" class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded shadow transition">Reset</button>
+    </div>
+    <div id="status" class="text-xl text-gray-600">Ready to work</div>
+
+    <script src="timer.js"></script>
+</body>
+</html>
